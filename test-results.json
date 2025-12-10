@@ -16,35 +16,9 @@
     "preserveOutput": "always",
     "reporter": [
       [
-        "list",
-        null
-      ],
-      [
-        "html",
-        null
-      ],
-      [
-        "junit",
-        {
-          "outputFile": "results.xml"
-        }
-      ],
-      [
         "json",
         {
-          "outputFile": "results.json"
-        }
-      ],
-      [
-        "json",
-        {
-          "outputFile": "results.json"
-        }
-      ],
-      [
-        "/Users/bikrambadatya/PlayWrightAutomation/node_modules/allure-playwright/dist/cjs/index.js",
-        {
-          "outputFolder": "my-allure-results"
+          "outputFile": "test-results.json"
         }
       ]
     ],
@@ -57,7 +31,7 @@
       {
         "outputDir": "/Users/bikrambadatya/PlayWrightAutomation/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
@@ -80,13 +54,13 @@
   },
   "suites": [
     {
-      "title": "screenshot.spec.js",
-      "file": "screenshot.spec.js",
+      "title": "Google/BooksTitle.spec.js",
+      "file": "Google/BooksTitle.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Element Page ScreenShot",
+          "title": "Verify Book and Title and Price tag",
           "ok": true,
           "tags": [],
           "tests": [
@@ -101,18 +75,18 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6681,
+                  "duration": 3394,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-11-21T18:27:18.905Z",
+                  "startTime": "2025-12-10T15:08:58.164Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "/Users/bikrambadatya/PlayWrightAutomation/test-results/screenshot-Element-Page-ScreenShot-chromium/trace.zip"
+                      "path": "/Users/bikrambadatya/PlayWrightAutomation/test-results/Google-BooksTitle-Verify-Book-and-Title-and-Price-tag-chromium/trace.zip"
                     }
                   ]
                 }
@@ -120,18 +94,18 @@
               "status": "expected"
             }
           ],
-          "id": "b6aa675bc40ab83f8367-12a7a3fd68903cd8447e",
-          "file": "screenshot.spec.js",
-          "line": 15,
-          "column": 6
+          "id": "208021d1eca229769586-3b4a7278d7d3c3c40d94",
+          "file": "Google/BooksTitle.spec.js",
+          "line": 3,
+          "column": 1
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-11-21T18:27:18.551Z",
-    "duration": 8687.073,
+    "startTime": "2025-12-10T15:08:57.863Z",
+    "duration": 4906.91,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

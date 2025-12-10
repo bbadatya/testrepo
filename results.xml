@@ -1,69 +1,9 @@
-<testsuites id="" name="" tests="3" failures="1" skipped="0" errors="0" time="33.88993">
-<testsuite name="Reporters.spec.js" timestamp="2025-10-06T09:57:16.009Z" hostname="chromium" tests="3" failures="1" skipped="0" time="29.021" errors="0">
-<testcase name="Test1" classname="Reporters.spec.js" time="6.284">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="8.687073">
+<testsuite name="screenshot.spec.js" timestamp="2025-11-21T18:27:18.601Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.681" errors="0">
+<testcase name="Element Page ScreenShot" classname="screenshot.spec.js" time="6.681">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results/Reporters-Test1-chromium/trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Test2" classname="Reporters.spec.js" time="7.311">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results/Reporters-Test2-chromium/trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Test3" classname="Reporters.spec.js" time="15.426">
-<failure message="Reporters.spec.js:15:1 Test3" type="FAILURE">
-<![CDATA[  [chromium] › Reporters.spec.js:15:1 › Test3 ──────────────────────────────────────────────────────
-
-    Error: expect(page).toHaveTitle(expected) failed
-
-    Expected string: "nopCommerce demo store. Registe"
-    Received string: "nopCommerce demo store. Register"
-    Timeout: 5000ms
-
-    Call log:
-      - Expect "toHaveTitle" with timeout 5000ms
-        9 × unexpected value "nopCommerce demo store. Register"
-
-
-      16 |
-      17 |     await page.goto('https://demo.nopcommerce.com/register')
-    > 18 |     await expect(page).toHaveTitle('nopCommerce demo store. Registe')
-         |                        ^
-      19 | })
-        at /Users/bikrambadatya/PlayWrightAutomation/tests/Reporters.spec.js:18:24
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ../test-results/Reporters-Test3-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ../test-results/Reporters-Test3-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ../test-results/Reporters-Test3-chromium/error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ../test-results/Reporters-Test3-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace ../test-results/Reporters-Test3-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results/Reporters-Test3-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|test-results/Reporters-Test3-chromium/video.webm]]
-
-[[ATTACHMENT|test-results/Reporters-Test3-chromium/error-context.md]]
-
-[[ATTACHMENT|test-results/Reporters-Test3-chromium/trace.zip]]
+[[ATTACHMENT|test-results/screenshot-Element-Page-ScreenShot-chromium/trace.zip]]
 ]]>
 </system-out>
 </testcase>

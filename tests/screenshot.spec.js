@@ -3,7 +3,7 @@ const{test, expect} = require('@playwright/test')
 test('Page ScreenShot', async({page})=>{
 
     await page.goto('https://www.demoblaze.com/index.html')
-    await page.screenshot({path:'tests/screenshots/'+Date.now()+'Homepage.png'})
+    await page.screenshot({path:'tests/screenshots/'+Date.now()+'HomePage.png'})
 })
 
 test('Full Page ScreenShot', async({page})=>{

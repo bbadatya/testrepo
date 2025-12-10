@@ -25,20 +25,20 @@ const config = ({
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-  retries:1,
+  retries:0,
   /* Opt out of parallel tests on CI. */
   workers:1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   //reporter: 'html',
-  //reporter:[['json', {  outputFile: 'test-results.json' }]],
+  reporter:[['json', {  outputFile: 'test-results.json' }]],
   //reporter: [['junit', { outputFile: 'results.xml' }]],
-  reporter: [['list'],
+  /*reporter: [['list'],
              ['html'],
              ['junit', { outputFile: 'results.xml' }],
              ['json', { outputFile: 'results.json' }],
              ['json', { outputFile: 'results.json' }],
              ['allure-playwright', { outputFolder: 'my-allure-results' }],
-            ],
+            ],*/
             
 
 

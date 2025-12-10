@@ -15,6 +15,10 @@ test('Drag and Drop action', async ({page})=>{
     await destEle.hover()
     await page.mouse.up() */
 
+    //approach 3 - Using buildin dragAndDrop()
+
+    await page.dragAndDrop('#draggableElement', '#droppableElement');
+
     //Approach 2
     await sourceEle.dragTo(destEle)
 
