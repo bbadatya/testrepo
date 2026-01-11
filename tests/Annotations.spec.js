@@ -29,14 +29,14 @@ test.skip('Test2', async({page})=>{
     
 })*/
 
-/*test('Test5', async({page})=>{
+test('Test5', async({page})=>{
     console.log('This is my test 4')
     test.fail()// expected
     expect(1).toBe(1)// actual
 
     // output is : Expected to fail, but passed.
     
-})*/
+})
 
 /*test('Test6', async({page})=>{
     console.log('This is my test 6')
@@ -57,7 +57,7 @@ test.skip('Test2', async({page})=>{
     
 })*/
 
-test('Test8', async({page})=>{
+test.skip('Test8', async({page})=>{
     console.log('This is my test 8')
     test.slow() // does triple speed increase timeout
     //test.setTimeout(5000)

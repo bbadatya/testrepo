@@ -19,6 +19,9 @@ test('Assertions Test', async ({page}) => {
     await expect(RegisterText).toHaveText('Register')
     await expect(RegisterText).not.toHaveText('RegisterMMM')
 
+    const CompanyDetails = await page.locator('.fieldset h2').nth(1)
+    await expect(CompanyDetails).toHaveText('Company Details')
+
     //4 await expect(locator).toContainText()	Element contains text
 
     const Register = await page.locator('.page-title h1')
@@ -62,10 +65,5 @@ test('Assertions Test', async ({page}) => {
     await expect(btn).toHaveAttribute('type', 'submit')
 
     //10) negative scenarios 
-
-
-
-
-
 
 })

@@ -49,19 +49,19 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.55.1",
-    "workers": 1,
+    "workers": 2,
     "webServer": null
   },
   "suites": [
     {
-      "title": "Google/BooksTitle.spec.js",
-      "file": "Google/BooksTitle.spec.js",
+      "title": "Google/Amazon.spec.js",
+      "file": "Google/Amazon.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Verify Book and Title and Price tag",
-          "ok": true,
+          "title": "Amazon eCommerce and Search for iPhone",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -74,28 +74,59 @@
                 {
                   "workerIndex": 0,
                   "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 3394,
-                  "errors": [],
+                  "status": "timedOut",
+                  "duration": 41382,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 40000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 40000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 40000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/Users/bikrambadatya/PlayWrightAutomation/tests/Google/Amazon.spec.js",
+                        "column": 114,
+                        "line": 10
+                      },
+                      "message": "Error: locator.click: Test timeout of 40000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('a[aria-label=\\'Apply the filter Apple to narrow results\\'] i[class=\\'a-icon a-icon-checkbox\\']')\u001b[22m\n\n\n\u001b[0m \u001b[90m  8 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m\"//span[text()='Brands']\"\u001b[39m)\n \u001b[90m  9 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 10 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"a[aria-label='Apply the filter Apple to narrow results'] i[class='a-icon a-icon-checkbox']\"\u001b[39m)\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                                                                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 11 |\u001b[39m\n \u001b[90m 12 |\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"\"\u001b[39m)\n \u001b[90m 13 |\u001b[39m\u001b[0m\n\u001b[2m    at /Users/bikrambadatya/PlayWrightAutomation/tests/Google/Amazon.spec.js:10:114\u001b[22m"
+                    }
+                  ],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-12-10T15:08:58.164Z",
+                  "startTime": "2025-12-16T09:42:58.752Z",
                   "annotations": [],
                   "attachments": [
                     {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/bikrambadatya/PlayWrightAutomation/test-results/Google-Amazon-Amazon-eCommerce-and-Search-for-iPhone-chromium/test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/bikrambadatya/PlayWrightAutomation/test-results/Google-Amazon-Amazon-eCommerce-and-Search-for-iPhone-chromium/video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/Users/bikrambadatya/PlayWrightAutomation/test-results/Google-Amazon-Amazon-eCommerce-and-Search-for-iPhone-chromium/error-context.md"
+                    },
+                    {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "/Users/bikrambadatya/PlayWrightAutomation/test-results/Google-BooksTitle-Verify-Book-and-Title-and-Price-tag-chromium/trace.zip"
+                      "path": "/Users/bikrambadatya/PlayWrightAutomation/test-results/Google-Amazon-Amazon-eCommerce-and-Search-for-iPhone-chromium/trace.zip"
                     }
                   ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "208021d1eca229769586-3b4a7278d7d3c3c40d94",
-          "file": "Google/BooksTitle.spec.js",
+          "id": "f1c43fb1839d3473dcf9-6ae2ae91f2c261e60e0c",
+          "file": "Google/Amazon.spec.js",
           "line": 3,
           "column": 1
         }
@@ -104,11 +135,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-10T15:08:57.863Z",
-    "duration": 4906.91,
-    "expected": 1,
+    "startTime": "2025-12-16T09:42:58.416Z",
+    "duration": 46277.834,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

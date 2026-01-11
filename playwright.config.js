@@ -27,26 +27,27 @@ const config = ({
   /* Retry on CI only */
   retries:0,
   /* Opt out of parallel tests on CI. */
-  workers:1,
+  workers:2,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  //reporter: 'html',
-  reporter:[['json', {  outputFile: 'test-results.json' }]],
+  reporter: 'html',
+  //reporter:[['json', {  outputFile: 'test-results.json' }]],
   //reporter: [['junit', { outputFile: 'results.xml' }]],
-  /*reporter: [['list'],
-             ['html'],
-             ['junit', { outputFile: 'results.xml' }],
-             ['json', { outputFile: 'results.json' }],
-             ['json', { outputFile: 'results.json' }],
+  /*reporter: [
+             //['list'],
+             //['html'],
+             //['junit', { outputFile: 'results.xml' }],
+             //['json', { outputFile: 'results.json' }],
+             //['json', { outputFile: 'results.json' }],
              ['allure-playwright', { outputFolder: 'my-allure-results' }],
-            ],*/
+            ],
             
 
 
 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    browserName : 'chromium',
-    headless : false,
+    browserName : 'chromium',// firefox or webkit
+    headless : true, //always run in local browser(in headed mode)
     screenshot:"only-on-failure",
     video:"retain-on-failure",
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -69,9 +70,9 @@ const config = ({
     /*{
       name: 'firefox',
       use: { ...devices['Desktop Firefox'] },
-    },*/
+    },
 
-    /*{
+    {
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     },*/

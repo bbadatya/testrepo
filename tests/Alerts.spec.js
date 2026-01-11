@@ -44,7 +44,8 @@ test.skip('Handling Confirm Alerts with OK and Cancel', async ({page}) => {
         //await dialog.dismiss()// cancel button
 
         await page.locator('#confirmBtn').click();
-        await expect(await page.locator("//p[@id='demo']")).toHaveText('You pressed OK!')
+        //await expect(await page.locator("//p[@id='demo']")).toHaveText('You pressed OK!')
+        await expect(await page.locator('#demo')).toHaveText('You pressed OK!')
 
     })
 

@@ -32,8 +32,4 @@ test('Handle frames', async ({page}) => {
     await page.waitForTimeout(5000)
 
 
-
-
-
-
 })
